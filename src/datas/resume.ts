@@ -3,7 +3,8 @@ import type { ResumeConfig } from '@/components/types';
 /** 初始化常量 */
 export const RESUME_INFO: ResumeConfig = {
   avatar: {
-    src: undefined,
+    src:
+      'https://cdn.jsdelivr.net/gh/Angels-D/Angels-D.github.io/medias/avatar.jpg',
     hidden: false,
   },
   profile: {

@@ -6,7 +6,6 @@ import qs from 'query-string';
 import { getLanguage, getLocale } from '@/locale';
 import { useModeSwitcher } from '@/hooks/useModeSwitcher';
 import { getDefaultTitleNameMap } from '@/datas/constant';
-import { getSearchObj } from '@/helpers/location';
 import { customAssign } from '@/helpers/customAssign';
 import { copyToClipboard } from '@/helpers/copy-to-board';
 import { getDevice } from '@/helpers/detect-device';
@@ -16,12 +15,13 @@ import { fetchResume } from '@/helpers/fetch-resume';
 import { Drawer } from './Drawer';
 import { Resume } from './Resume';
 import type { ResumeConfig, ThemeConfig } from './types';
+import { getAuthor, getSearchObj } from './author';
 import './index.less';
 
 export const Page: React.FC = () => {
   const lang = getLanguage();
   const i18n = getLocale();
-  const user = getSearchObj().user || 'visiky';
+  const user = getAuthor().user;
 
   const [, mode, changeMode] = useModeSwitcher({});
 
@@ -89,7 +89,7 @@ export const Page: React.FC = () => {
     }
 
     if (!mode) {
-      const link = `https://github.com/${user}/${user}/tree/${branch}`;
+      const link = `https://github.com/${user}/${user}/tree/${branch}/resume/`;
       fetchResume(lang, branch, user)
         .then(data => store(data))
         .catch(() => {
@@ -222,16 +222,19 @@ export const Page: React.FC = () => {
                       cursor: 'pointer',
                     }}
                     onClick={() => {
-                      const user = query.user || 'visiky';
-                      window.open(`https://github.com/${user}/${user}`);
+                      window.open(
+                        `https://github.com/${user}/${user}/blob/${
+                          query.branch || 'master'
+                        }/resume/resume.json`
+                      );
                     }}
                   >
-                    {`${query.user || 'visiky'}'s resumeInfo`}
+                    {`${user}'s resumeInfo`}
                   </span>
                   <span>
-                    {`（https://github.com/${query.user || 'visiky'}/${
-                      query.user || 'visiky'
-                    }/blob/${query.branch || 'master'}/resume.json）`}
+                    {`（https://github.com/${user}/${user}/blob/${
+                      query.branch || 'master'
+                    }/resume/resume.json）`}
                   </span>
                 </span>
               </span>

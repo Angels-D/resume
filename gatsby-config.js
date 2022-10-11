@@ -2,22 +2,23 @@ module.exports = {
   pathPrefix: '/resume',
   siteMetadata: {
     title: 'Resume Generator',
-    githubUrl: 'https://github.com/visiky/resume.git',
+    githubUrl: 'https://github.com/Angels-D/resume.git',
     author: 'visiky',
-    contact: 'https://github.com/visiky',
+    changed: 'Angels-D',
+    contact: 'https://github.com/Angels-D',
   },
   flags: {
     DEV_SSR: false,
   },
   plugins: [
-    {
-      // https://developers.google.com/analytics/devguides/collection/gtagjs?hl=zh_CN
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingIds: ['G-2K3PH6MKBG'],
-      },
-    },
+    // {
+    //   // https://developers.google.com/analytics/devguides/collection/gtagjs?hl=zh_CN
+    //   resolve: `gatsby-plugin-google-gtag`,
+    //   options: {
+    //     // The property ID; the tracking code won't be generated without it
+    //     trackingIds: ['G-2K3PH6MKBG'],
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-antd',
       options: {

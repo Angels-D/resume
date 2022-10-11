@@ -2,6 +2,7 @@ import React from 'react';
 import { LangSwitcher } from '@/components/LangSwitcher';
 import { getMode, useModeSwitcher } from '@/hooks/useModeSwitcher';
 import { getSearchObj } from '@/helpers/location';
+import { getAuthor } from '@/components/author';
 import { getLocale } from '@/locale';
 import './header.less';
 
@@ -13,7 +14,9 @@ const Header: React.FC = () => {
   function gotoOnlineVersion() {
     const query = getSearchObj();
     if (typeof window !== 'undefined') {
-      window.open(`https://visiky.github.io/resume/?user=${query.user}`);
+      window.open(
+        `https://${getAuthor().changed}.github.io/resume/?user=${query.user}`
+      );
     }
   }
 

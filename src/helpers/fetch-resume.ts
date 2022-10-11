@@ -9,7 +9,7 @@ export function fetchResume(
   user: string
 ): Promise<ResumeConfig> {
   return fetch(
-    `https://raw.githubusercontent.com/${user}/${user}/${branch}/resume.json`
+    `https://raw.githubusercontent.com/${user}/${user}/${branch}/resume/resume.json`
   )
     .then(data => {
       if (data.status !== 200) {
