@@ -105,6 +105,14 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
       },
       {
         type: 'input',
+        attributeId: 'qq',
+        displayName: 'QQ',
+        cfg: {
+          placeholder: '请输入你的QQ',
+        },
+      },
+      {
+        type: 'input',
         attributeId: 'github',
         displayName: i18n.get('Github'),
         cfg: {
@@ -118,6 +126,14 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
         cfg: {
           placeholder:
             'Please input the link to visit your zhihu account, optional',
+        },
+      },
+      {
+        type: 'input',
+        attributeId: 'blog',
+        displayName: '博客',
+        cfg: {
+          placeholder: '请输入你的博客链接(可选的)',
         },
       },
       {
@@ -138,11 +154,11 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
     ],
     educationList: [
       {
-        type: 'input',
+        type: 'date',
         attributeId: 'edu_time',
-        displayName: i18n.get('起始时间'),
+        displayName: i18n.get('起止时间'),
         formItemProps: { rules: [{ required: true }] },
-        // cfg: { picker: 'month' },
+        cfg: { picker: 'month' },
       },
       {
         type: 'input',
@@ -155,19 +171,25 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
         attributeId: 'major',
         displayName: i18n.get('专业'),
       },
+      {
+        type: 'input',
+        attributeId: 'academic_degree',
+        displayName: i18n.get('学历'),
+      },
     ],
     projectList: [
       {
-        type: 'input',
+        type: 'date',
         attributeId: 'project_time',
         displayName: i18n.get('起止时间'),
         formItemProps: { rules: [{ required: true }] },
-        // cfg: { picker: 'month' },
+        cfg: { picker: 'month' },
       },
       {
         type: 'input',
         attributeId: 'project_name',
         displayName: i18n.get('项目名称'),
+        formItemProps: { rules: [{ required: true }] },
       },
       {
         type: 'input',
@@ -195,11 +217,11 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
     ],
     workExpList: [
       {
-        type: 'input',
+        type: 'date',
         attributeId: 'work_time',
         displayName: i18n.get('起止时间'),
         formItemProps: { rules: [{ required: true }] },
-        // cfg: { picker: 'month' },
+        cfg: { picker: 'month' },
       },
       {
         type: 'input',
@@ -223,6 +245,7 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
         type: 'input',
         attributeId: 'work_name',
         displayName: i18n.get('作品名称'),
+        formItemProps: { rules: [{ required: true }] },
       },
       {
         type: 'input',
@@ -240,6 +263,7 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
         type: 'input',
         attributeId: 'skill_name',
         displayName: i18n.get('技能项'),
+        formItemProps: { rules: [{ required: true }] },
       },
       {
         type: 'number',
@@ -264,8 +288,6 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
         type: 'input',
         attributeId: 'award_time',
         displayName: i18n.get('获奖时间'),
-        formItemProps: { rules: [{ required: true }] },
-        // cfg: { picker: 'month' },
       },
       {
         type: 'input',

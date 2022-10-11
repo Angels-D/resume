@@ -8,228 +8,245 @@ export const RESUME_INFO: ResumeConfig = {
   },
   profile: {
     name: '姓名',
-    email: '736****86@qq.com',
-    mobile: '156********',
-    github: 'https://github.com/visiky',
-    zhihu: 'https://zhihu.com/people/visiky',
+    qq: '100****',
+    email: 'd10****41@126.com',
+    mobile: '137********',
+    github: 'https://github.com/Angels-D',
+    zhihu: '',
+    blog: 'https://angels-d.github.io',
     workExpYear: '',
-    workPlace: '浙江杭州',
-    positionTitle: '前端工程师',
+    workPlace: '甘肃兰州',
+    positionTitle: '',
   },
   educationList: [
     {
-      edu_time: ['2014.09.01', '2018.06.30'],
-      school: '华南理工大学',
-      major: '网络工程',
+      edu_time: ['2019.09.01', '2023.06.30'],
+      school: '兰州理工大学',
+      major: '计算机科学与技术',
       academic_degree: '本科',
     },
   ],
   awardList: [
+    { award_info: '蓝桥杯 国家级 二等奖', award_time: '2021' },
     {
-      award_info: '英语 CET6',
-      award_time: '2015',
+      award_info: '中国大学生计算机设计大赛 西北赛区 团队一等奖',
+      award_time: '2021,2022',
     },
-    {
-      award_info: '蚂蚁近卫军 卓越个人奖',
-      award_time: '2018.09',
-    },
-    {
-      award_info: '前端练习生 可视化讲师',
-      award_time: '2020.10',
-    },
-    {
-      award_info:
-        '前端早早聊 分享 “如何构思和开发开箱即用的可视化图表库 G2Plot”',
-      award_time: '2021.07',
-    },
+    { award_info: '天梯赛 国家级 团队三等奖', award_time: '2021' },
+    { award_info: 'RoboCom 国家级 三等奖', award_time: '2022' },
+    { award_info: 'ACM、CCSP、CUMCM 等竞赛经验' },
   ],
   workExpList: [
     {
-      company_name: '蚂蚁集团',
-      department_name: '体验技术部',
-      work_time: ['2018.06', null],
-      work_desc: `1. 担任蚂蚁高管决策和管理协同产品 “数据作战室” 的前端负责人\r\n2. 负责蚂蚁敏捷 BI 产品 “DeepInsight” 的可视分析模块产品能力建设\n3. 数据可视化 AntV 团队核心成员，负责 G2、G2Plot 开源技术的建设`,
+      work_time: ['2019.9', '2020.5'],
+      company_name: '兰州理工大学',
+      department_name: '学生会',
+      work_desc: `职位：心理辅导站成员
+组织开展心理主体活动，协同学生会组织工作`,
     },
     {
-      company_name: '蚂蚁金服',
-      department_name: '大数据部',
-      work_time: ['2017.06', '2017.12'],
-      work_desc:
-        '前端实习生。使用 React 参与开发多类产品：数据研发平台、数据决策平台、数据分析平台的研发工作，同时也参与大型 BI 产品的重构工作，有良好的编码习惯。',
+      work_time: ['2020.1', '2020.6'],
+      company_name: '兰州理工大学',
+      department_name: '班级',
+      work_desc: `职位：学习委员
+在2020年疫情期间组织进行线上学习工作并处理相关文件，深入了解并学习网上办公、协同工作技巧`,
     },
     {
-      company_name: '数沃信息科技有限公司',
-      department_name: '',
-      work_time: ['2017.03', '2017.05'],
-      work_desc:
-        '前端实习生。使用 Vue 来实现平台功能和逻辑，再用 ECharts 来对数据挖掘分析后的可视化结果进行展示',
+      company_name: '兰州理工大学',
+      department_name: '鲲鹏创新协会(社团)',
+      work_time: ['2021.11', null],
+      work_desc: `职位：社长
+本社团与鲲鹏创新中心对接，旨在宣传鲲鹏相关技术、产品，树立国产软硬件生态意识，在校内培养一批具有鲲鹏技术能力的高校青年。`,
     },
   ],
   skillList: [
     {
-      skill_name: 'HTML 和 CSS',
-      // '熟练掌握 html, css 等前端基础技术，不借助框架编写响应式/移动端网页',
-      skill_desc: '',
-      skill_level: 89,
-    },
-    {
-      skill_name: 'TypeScript / JavaScript',
-      // skill_desc: '熟悉 TypeScript，丰富的 ts 项目经验',
-      skill_level: 90,
-    },
-    {
-      skill_name: '数据可视化',
-      skill_desc: '丰富的可视化工程实践以及开源经验',
-      skill_level: 90,
-    },
-    {
-      skill_name: 'React / 前端工程化',
-      skill_desc: '大型前端项目经验以及组件库开发经验',
+      skill_name: 'C++ / Qt / 面向对象',
+      skill_desc: `熟悉和使用类、模板、指针等概念
+Qt 图形界面实践经验`,
       skill_level: 80,
+    },
+    {
+      skill_name: '嵌入式 / 计算机组成',
+      skill_desc: `了解8086，熟悉Verilog和冯·诺依曼模型机
+熟悉应用：Quartus、AltiumDesigner等`,
+      skill_level: 80,
+    },
+    {
+      skill_name: 'OpenEuler / 华为云',
+      skill_desc: `熟悉Openeuler、泰山服务器的使用
+体验和使用过ECS、ModelArts等`,
+      skill_level: 70,
+    },
+    {
+      skill_name: 'OpenGauss 数据库',
+      skill_desc: `熟悉基本功能，JDBC应用`,
+      skill_level: 60,
     },
   ],
   projectList: [
     {
-      project_name: '数据作战室',
-      project_role: '前端负责人',
-      project_time: '2019.04 - 2020.06',
-      project_desc:
-        '面向总裁和高管以及决策 BI 的数字化经营决策和管理协同产品。提供一站式的数据化经营决策和管理协同功能，让高管高效获取决策信息，并提升管理效率。',
-      project_content:
-        '1. 项目从0到1的框架设计和开发 2. 产品体验精雕细琢的打磨 3. 建立稳定性保障机制。目前仍在迭代中，帮助提升高管业务决策效率',
+      project_name: '鲲鹏众智 openEuler社区软件包加固 第三期',
+      project_role: '技术指导 项目成员',
+      project_time: ['2022.07', '2022.11'],
+      project_desc: `本项目针对openEuler社区上继承的开源软件进行测试加固，针对15款软件，进行测试用例设计、编写并执行，最终贡献至社区`,
+      project_content: `
+1. 组织项目培训和项目技术指导
+2. 负责4个软件包测试、2个软件包升级
+3. 项目进度控制和项目工作报告。
+在本项目中主要了解了社区运作结构，掌握了Shell脚本开发，进一步熟悉了openEuler`,
     },
     {
-      project_name: 'DeepInsight',
-      project_role: '可视分析负责人',
-      project_time: '2018.07 - 2019.04 / 2020.07 - 至今',
-      project_desc:
-        'DeepInsight 是蚂蚁集团自主研发的自助式 BI 数据洞察分析平台，面向企业分析人员、业务人员和开发人员，帮助蚂蚁集团实现精细化运营。',
-      project_content:
-        'BI 平台工具核心部分是报表制作，也就是通过数据连接、可视化配置形成图表物料之后，通过拖拽方式进行页面编排，最终形成报表页面进行发布的过程。\n1. 主导开放能力建设，拉通产品、设计建设和扩展可视化图形，提升丰富度\n2. 产品体验优化，尤其是对 ECharts 的体验顽疾进行攻克\n3. 主导可视化能力建设：业务标准化图表库建设(通用组件设计和开发经验丰富)、促进数据分析能力增强等可视化一体化建设',
-    },
-    {
-      project_name: 'G2、G2Plot',
-      project_role: '核心开发者',
-      project_time: '2019 - 至今',
-      project_desc:
-        'G2 是基于图形语法理论的可视化渲染引擎，G2Plot 是在 G2 基础上封装的开箱即用的统计可视化图表库',
-      project_content:
-        'AntV 可视化建设，赋能整个蚂蚁和阿里集团统计可视化分析相关业务。负责 AntV 系列: AntV 官网、G 渲染引擎、 G2、G2Plot、ThemeSet 主题构建器等开源项目的研发工作。',
+      project_name: '昇腾众智 MindStudio 迁移工具泛化',
+      project_role: '项目成员',
+      project_time: ['2022.10', null],
+      project_desc: `使用迁移工具将任务清单中的模型迁移至指定框架和平台，对工具未支持API进行适配，使迁移后模型能跑通并收敛`,
+      project_content: `暂无`,
     },
   ],
   workList: [
     // {
-    //   work_name: '个人简历生成器',
-    //   visit_link: 'https://visiky.github.io/resume',
+    //   work_name: 'LUT服务器',
+    //   visit_link: 'https://cn-zz-bgp-1.natfrp.cloud:55243/',
     // },
     // {
-    //   work_name: 'AntV 主题生成器',
-    //   visit_link: 'https://theme-set.antv.vision',
+    //   work_name: '校友管理系统',
+    //   visit_link: 'https://github.com/Angels-D/Alumni-Management-System',
     // },
     // {
-    //   work_name: 'AntV 可视化精选',
-    //   visit_link: 'https://vis-dashboard.antv.vision',
-    // },
+    //   work_name: '学生选课系统',
+    //   visit_link: 'https://github.com/Angels-D/Student-selection-system',
+    // }
   ],
   aboutme: {
-    aboutme_desc: `🌱 Focus on data visualization and analysis 😈 能力项：沟通协调能力、执行力
-    自驱型前端工程师，三年多大型复杂产品开发经验，负责蚂蚁集团 BI 产品 DeepInsight 的可视化建设，参与了从图表库到 BI 产品力的一体化建设，对商业智能领域的数据可视化建设有较为丰富的经验。
-    参与 AntV 团队开源项目 G2、G2Plot 的研发，目前是 G2Plot 的主要负责人。
+    aboutme_desc: `
+    性别：男性　　出生：1999年8月
+    民族：汉族　　籍贯：浙江省湖州市
+    政治面貌：中共党员
+    理想：为天地立心　 为生民请命
+    　　　为往圣继绝学 为万世开太平
+    头衔：速成大师、黑科技选手、肝帝
+    爱好：游戏、动漫、哲学
     `,
   },
   // 国际化
   locales: {
     en_US: {
       profile: {
-        name: 'Xiaojuan Liao',
-        email: '736****86@qq.com',
-        mobile: '156********',
-        github: 'https://github.com/visiky',
-        zhihu: 'https://zhihu.com/people/visiky',
+        name: 'Name',
+        qq: '100****',
+        email: 'd10****41@126.com',
+        mobile: '137********',
+        github: 'https://github.com/Angels-D',
+        zhihu: '',
+        blog: 'https://angels-d.github.io',
         workExpYear: '',
+        workPlace: 'Lanzhou, Gansu',
       },
       skillList: [
-        { skill_name: 'HTML 和 CSS', skill_desc: '', skill_level: 89 },
-        { skill_name: 'TypeScript / JavaScript', skill_level: 90 },
         {
-          skill_name: 'Data Visualization',
-          skill_desc: '丰富的可视化工程实践以及开源经验',
-          skill_level: 90,
+          skill_name: 'C++ / Qt / OOP',
+          skill_desc: `Familiar with classes, templates, pointers, etc
+Qt GUI Practice Experience`,
+          skill_level: 80,
         },
         {
-          skill_name: 'React / 前端工程化',
-          skill_desc: '大型前端项目经验以及组件库开发经验',
+          skill_name: 'Embedded / Computer Working Principle',
+          skill_desc: `Learn about 8086, Verilog, Making of Von Neumann Model Machine
+Ability to use: Quartus, AltiumDesigner, etc`,
           skill_level: 80,
+        },
+        {
+          skill_name: 'OpenEuler / Hua Weiyun',
+          skill_desc: `be familiar with Openeuler, Taishan Server
+Experience with: ECS, ModelArts, etc`,
+          skill_level: 70,
+        },
+        {
+          skill_name: 'OpenGauss Database',
+          skill_desc: 'Familiar with basic functions, JDBC application',
+          skill_level: 60,
         },
       ],
       avatar: { hidden: false },
       educationList: [
         {
           edu_time: ['2014.09.01', '2018.06.30'],
-          school: 'SCUT',
-          major: 'Compute Science',
-          academic_degree: '本科',
+          school: 'Lanzhou University of Technology',
+          major: 'Computer Science and Technology',
+          academic_degree: 'undergraduate',
         },
       ],
       awardList: [
-        { award_info: '英语 CET6', award_time: '2015' },
-        { award_info: '蚂蚁近卫军 卓越个人奖', award_time: '2018.09' },
-        { award_info: '前端练习生 可视化讲师', award_time: '2020.10' },
+        {
+          award_info: 'Lanqiao_Trophy National Second_Prize',
+          award_time: '2021',
+        },
         {
           award_info:
-            '前端早早聊 分享 “如何构思和开发开箱即用的可视化图表库 G2Plot”',
-          award_time: '2021.07',
+            'China_Undergraduate_Computer_Design_Competition Northwest_Division Team_First_Prize',
+          award_time: '2021,2022',
         },
+        { award_info: 'GPLT National Team_Third_Prize', award_time: '2021' },
+        { award_info: 'RoboCom National Third_Prize', award_time: '2022' },
+        { award_info: 'ACM, CCSP, CUMCM, etc Competition experience' },
       ],
       workExpList: [
         {
-          company_name: 'Ant Group',
-          department_name: 'AFX',
-          work_time: ['2018.06', null],
-          work_desc:
-            '1. 担任蚂蚁高管决策和管理协同产品 “数据作战室” 的前端负责人\r\n2. 负责蚂蚁敏捷 BI 产品 “DeepInsight” 的可视分析模块产品能力建设\n3. 数据可视化 AntV 团队核心成员，负责 G2、G2Plot 开源技术的建设',
+          work_time: ['2019.9', '2020.5'],
+          company_name: 'Lanzhou University of Technology',
+          department_name: 'Student union',
+          work_desc: `Position: Member of psychological counseling station
+          Organize and carry out psychological activities and coordinate the work of the Student Union`,
         },
         {
-          company_name: 'Ant Group',
-          department_name: '大数据部',
-          work_time: ['2017.06', '2017.12'],
-          work_desc:
-            '前端实习生。使用 React 参与开发多类产品：数据研发平台、数据决策平台、数据分析平台的研发工作，同时也参与大型 BI 产品的重构工作，有良好的编码习惯。',
+          work_time: ['2020.1', '2020.6'],
+          company_name: 'Lanzhou University of Technology',
+          department_name: 'Class',
+          work_desc: `Position: Study Committee Member
+Organize online learning and process relevant documents during the epidemic in 2020, and deeply understand and learn the skills of online office and collaborative work`,
+        },
+        {
+          company_name: 'Lanzhou University of Technology',
+          department_name: 'Kunpeng Innovation Association (Association)',
+          work_time: ['2021.11', null],
+          work_desc: `Position: President
+The association is connected with Kunpeng Innovation Center, aiming to publicize Kunpeng related technologies and products, establish the ecological awareness of domestic software and hardware, and cultivate a group of young college students with Kunpeng's technical ability.`,
         },
       ],
       projectList: [
         {
-          project_name: '数据作战室',
-          project_role: '前端负责人',
-          project_time: '2019.04 - 2020.06',
-          project_desc:
-            '面向总裁和高管以及决策 BI 的数字化经营决策和管理协同产品。提供一站式的数据化经营决策和管理协同功能，让高管高效获取决策信息，并提升管理效率。',
-          project_content:
-            '1. 项目从0到1的框架设计和开发 2. 产品体验精雕细琢的打磨 3. 建立稳定性保障机制。目前仍在迭代中，帮助提升高管业务决策效率',
+          project_name:
+            'Kunpeng Wisdom - openEuler Community software package reinforcement - Phase III',
+          project_role: 'Technical guidance, Project members',
+          project_time: ['2022.07', '2022.11'],
+          project_desc: `This project tests and reinforces the open source software inherited from the openEuler community, designs, writes and executes test cases for 15 types of software, and ultimately contributes to the community`,
+          project_content: `
+1. Organize project training and project technical guidance
+2. Responsible for testing 4 software packages and upgrading 2 software packages
+3. Project progress control and project work report.
+In this project, I mainly learned about the community operation structure, mastered shell script development, and became more familiar with openEuler`,
         },
         {
-          project_name: 'DeepInsight',
-          project_role: '可视分析负责人',
-          project_time: '2018.07 - 2019.04 / 2020.07 - 至今',
-          project_desc:
-            'DeepInsight 是蚂蚁集团自主研发的自助式 BI 数据洞察分析平台，面向企业分析人员、业务人员和开发人员，帮助蚂蚁集团实现精细化运营。',
-          project_content:
-            'BI 平台工具核心部分是报表制作，也就是通过数据连接、可视化配置形成图表物料之后，通过拖拽方式进行页面编排，最终形成报表页面进行发布的过程。\n1. 主导开放能力建设，拉通产品、设计建设和扩展可视化图形，提升丰富度\n2. 产品体验优化，尤其是对 ECharts 的体验顽疾进行攻克\n3. 主导可视化能力建设：业务标准化图表库建设(通用组件设计和开发经验丰富)、促进数据分析能力增强等可视化一体化建设',
-        },
-        {
-          project_name: 'G2、G2Plot',
-          project_role: '核心开发者',
-          project_time: '2019 - 至今',
-          project_desc:
-            'G2 是基于图形语法理论的可视化渲染引擎，G2Plot 是在 G2 基础上封装的开箱即用的统计可视化图表库',
-          project_content:
-            'AntV 可视化建设，赋能整个蚂蚁和阿里集团统计可视化分析相关业务。负责 AntV 系列: AntV 官网、G 渲染引擎、 G2、G2Plot、ThemeSet 主题构建器等开源项目的研发工作。',
+          project_name:
+            'Ascend Wisdom - MindStudio Migration tool generalization',
+          project_role: 'Project members',
+          project_time: ['2022.10', null],
+          project_desc: `Use the migration tool to migrate the model in the task list to the specified framework and platform, and adapt the API that the tool does not support, so that the model can run through and converge after migration`,
+          project_content: 'None',
         },
       ],
       workList: [],
       aboutme: {
-        aboutme_desc:
-          '🌱 Focus on data visualization and analysis 😈 能力项：沟通协调能力、执行力\n    自驱型前端工程师，三年多大型复杂产品开发经验，负责蚂蚁集团 BI 产品 DeepInsight 的可视化建设，参与了从图表库到 BI 产品力的一体化建设，对商业智能领域的数据可视化建设有较为丰富的经验。\n    参与 AntV 团队开源项目 G2、G2Plot 的研发，目前是 G2Plot 的主要负责人。\n    ',
+        aboutme_desc: `
+        Gender: male Birth: August 1999
+        Nationality: Han Nationality Native place: Huzhou City, Zhejiang Province
+        Political status: CPC member
+        Ideal: to stand for heaven and earth and ask for life
+        For the sake of going to the holy place and inheriting knowledge, to open peace for all generations
+        Title: Quick Master, Black Technology Player, Gan Di
+        Hobbies: games, animation, philosophy
+        `,
       },
     },
   },

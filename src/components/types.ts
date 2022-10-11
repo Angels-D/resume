@@ -11,10 +11,12 @@ export type ResumeConfig = {
   /** 个人信息 */
   profile?: {
     name: string;
+    qq?: string;
     mobile?: string;
     email?: string;
     github?: string;
     zhihu?: string;
+    blog?: string;
     /** 工作经验 xx 年 */
     workExpYear?: string;
     /** 期望工作地 */
@@ -69,7 +71,7 @@ export type ResumeConfig = {
     /** 项目内容，负责内容 */
     project_content?: string;
     /** 项目时间 */
-    project_time?: string;
+    project_time?: [string | undefined, string | number];
   }>;
 
   /** 个人技能 */

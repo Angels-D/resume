@@ -2,15 +2,17 @@ import React from 'react';
 import { Rate, Tag } from 'antd';
 import {
   MobileFilled,
+  QqCircleFilled,
   MailFilled,
   GithubFilled,
   ZhihuCircleFilled,
   TrophyFilled,
   CheckCircleFilled,
   ScheduleFilled,
-  CrownFilled,
   EnvironmentFilled,
   HeartFilled,
+  CrownFilled,
+  HomeFilled,
 } from '@ant-design/icons';
 import _ from 'lodash-es';
 import { getLocale } from '@/locale';
@@ -97,10 +99,33 @@ export const Template1: React.FC<Props> = props => {
                 {profile.mobile}
               </div>
             )}
+            {profile?.qq && (
+              <div className="qq">
+                <QqCircleFilled style={{ color: theme.color, opacity: 0.85 }} />
+                <span
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    window.open(
+                      'tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=' +
+                        profile.qq
+                    );
+                  }}
+                >
+                  {profile.qq}
+                </span>
+              </div>
+            )}
             {profile?.email && (
               <div className="email">
                 <MailFilled style={{ color: theme.color, opacity: 0.85 }} />
-                {profile.email}
+                <span
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    window.open('mailto:' + profile.email);
+                  }}
+                >
+                  {profile.email}
+                </span>
               </div>
             )}
             {profile?.github && (
@@ -117,7 +142,7 @@ export const Template1: React.FC<Props> = props => {
               </div>
             )}
             {profile?.zhihu && (
-              <div className="github">
+              <div className="zhihu">
                 <ZhihuCircleFilled
                   style={{ color: theme.color, opacity: 0.85 }}
                 />
@@ -128,6 +153,19 @@ export const Template1: React.FC<Props> = props => {
                   }}
                 >
                   {profile.zhihu}
+                </span>
+              </div>
+            )}
+            {profile?.blog && (
+              <div className="github">
+                <HomeFilled style={{ color: theme.color, opacity: 0.85 }} />
+                <span
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    window.open(profile.blog);
+                  }}
+                >
+                  {profile.blog}
                 </span>
               </div>
             )}

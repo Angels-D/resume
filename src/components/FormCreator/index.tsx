@@ -1,9 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { Form, Input, InputNumber, Button, Checkbox, Select } from 'antd';
+import {
+  Form,
+  Input,
+  InputNumber,
+  DatePicker,
+  Button,
+  Checkbox,
+  Select,
+} from 'antd';
 import { FormItemProps } from 'antd/lib/form';
 import _ from 'lodash-es';
 import { ColorPicker } from './ColorPicker';
-import { getLocale } from '@/locale';
+import { getLocale, getLanguage } from '@/locale';
+import locale from 'antd/lib/date-picker/locale/zh_CN';
+import moment from 'moment';
+import 'moment/locale/zh-cn';
+
+const { RangePicker } = DatePicker;
 
 type Props = {
   /** 表单配置 */
@@ -41,6 +54,8 @@ const FormItemComponentMap = (type: string) => (
       return <Input.TextArea {...props} />;
     case 'color-picker':
       return <ColorPicker {...props} />;
+    case 'date':
+      return <RangePicker {...props} />;
     default:
       return <Input />;
   }
@@ -60,7 +75,20 @@ export const FormCreator: React.FC<Props> = props => {
 
   const handleChange = (values: any) => {
     if ('edu_time' in values) {
-      values.edu_time = values.edu_time.split(',');
+      values.edu_time = [
+        values.edu_time[0].format('YYYY.MM'),
+        values.edu_time[1].format('YYYY.MM'),
+      ];
+    } else if ('work_time' in values) {
+      values.work_time = [
+        values.work_time[0].format('YYYY.MM'),
+        values.work_time[1].format('YYYY.MM'),
+      ];
+    } else if ('project_time' in values) {
+      values.project_time = [
+        values.project_time[0].format('YYYY.MM'),
+        values.project_time[1].format('YYYY.MM'),
+      ];
     }
     props.onChange(values);
   };
@@ -77,6 +105,17 @@ export const FormCreator: React.FC<Props> = props => {
         {...formProps}
       >
         {_.map(props.config, c => {
+          if (c.type == 'date') {
+            if (getLanguage() == 'zh_CN') {
+              c.cfg.locale = { ...locale };
+            }
+            if (props.value?.[c.attributeId].map) {
+              const date = props.value[c.attributeId].map(item =>
+                moment(item ?? undefined)
+              );
+              props.value[c.attributeId] = { ...date };
+            }
+          }
           return (
             <Form.Item
               key={c.attributeId}

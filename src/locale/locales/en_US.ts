@@ -48,6 +48,7 @@ export const EN_US_LOCALE: Locale = {
   起始时间: 'Start time',
   学校: 'School',
   专业: 'Major in',
+  学历: 'Academic degree',
   项目名称: 'Project name',
   担任角色: 'Project role',
   部门: 'Apartment',
